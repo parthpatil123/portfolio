@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link href="portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/cb7c2978fd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div>
+                    <img src="parth.jpg" class="logo">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: bounceInLeft;">
+                <p><span class="multiple-text">FrontEnd Developer</span></p>
+                <h1>Hi, I'm <span>Parth</span> <br>Patil From India</h1>
+
+            </div>
+            <div>
+                <div class="img1 ">
+                    <img src="avtar.png" width="250px" class="avatar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <----------- About Me ------->
+    <div id="about">
+        <div class="container">
+            <div class="row ">
+
+                <div class="about-col-1 ">
+                    <div class=" wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <img src="pngwing.png" alt="">
+                    </div>
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Hello there! 👋 I'm [Parth Patil], a passionate Web Developer on a mission to create meaningful
+                        and intuitive digital experiences. With a keen eye for detail and a love for problem-solving, I
+                        thrive on turning complex challenges into elegant, user-friendly solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd</span><br>Html,Css,Javascript,Bootstrap</li>
+                            <li><span>Backend</span><br>Python,Sql,C++</li>
+                            <li><span>App Devlopment</span> <br> React</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>Fresher</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>FrontEnd-Devloper</li>
+                            <li><span>2022</span> <br>Graduate In BMS - Finance </li>
+                            <!-- <li><span>App Devlopment</span> <br>  Buildings  Andriod/ iosApp</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <------------- Services -------->
+
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div class=" wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Devlopment</h1>
+                    <p>Every project is a unique opportunity to create something extraordinary. I collaborate closely
+                        with clients to understand their vision, and my goal is to not just meet requirements but to
+                        exceed expectations. I'm a firm believer in clean code, responsive design, and a user-centric
+                        approach.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class=" wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h1>UI UX Design</h1>
+                    <p> I Conduct user research to understand your target audience's needs, preferences, and pain
+                        points.
+                        To Create user personas to represent different user types and keep them in mind throughout the
+                        design process.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class=" wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1>App</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed quo eius debitis aliquam. Facere
+                        vel reiciendis eaque minus voluptatem, sequi harum temporibus nesciunt officia modi, neque
+                        veniam expedita error?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name:bounceInLeft;">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app contacts you the talented people around the world.download is from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app contacts you the talented people around the world.download is from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name:bounceInRight;">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app contacts you the talented people around the world.download is from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -------------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>yashspatil35@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9769492733</p>
+
+                    <div class="social-icons wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name:rubberBand;">
+                        <a href="https://www.facebook.com/profile.php?id=100021864997703&mibextid=9R9pXO"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/03__patil__05?igshid=OWE2MHNtd212aTd3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Parth_Patil_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © ParthPortfolio. Made <i class="fa-solid fa-heart"></i> By Parth</p>
+    </div>
+
+</body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="portfolio.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxY7fLHJ4nDBeWBG3wKlcquysPB9AcVidRW_QUTC70G9sn_bjM5mlPaAZfv1OvcK5PI/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+</html>
