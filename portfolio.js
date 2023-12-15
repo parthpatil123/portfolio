@@ -1,3 +1,10 @@
+//darklight mode
+function myFunction() {
+    var color = document.body;
+    color.classList.toggle("dark-mode");
+
+
+ }
 // about me 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
