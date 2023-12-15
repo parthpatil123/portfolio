@@ -14,23 +14,29 @@
 </head>
 
 <body>
+    
     <div id="header">
-        <div class="container">
+        <div class="container" id="dark-container">
             <nav>
                 <div>
-                    <img src="parth.jpg" class="logo">
+                    <!-- <img src="parth.jpg" class="logo"> -->
+                    <p class="parth1"><span class="parth">P</span>arth</p>
                 </div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul  id="sidemenu">
+                    <li class="nav-item"><a href="#header">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#about">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#portfolio">Contact</a></li>
+                    <i class="fa-solid fa-moon" onclick="myFunction()"></i>
+                   
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
+                
 
             </nav>
+          
             <div class="header-text wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: bounceInLeft;">
                 <p><span class="multiple-text">FrontEnd Developer</span></p>
@@ -47,7 +53,7 @@
 
     <!-- <----------- About Me ------->
     <div id="about">
-        <div class="container">
+        <div class="container" id="dark-container">
             <div class="row ">
 
                 <div class="about-col-1 ">
@@ -95,7 +101,7 @@
     <!-- <------------- Services -------->
 
     <div id="service">
-        <div class="container">
+        <div class="container" id="dark-container">
             <h1 class="sub-title"> My Services</h1>
             <div class="services-list">
                 <div class=" wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -132,7 +138,7 @@
     </div>
     <!-- -----------Portfolio----------- -->
     <div id="portfolio">
-        <div class="container">
+        <div class="container" id="dark-container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -169,7 +175,7 @@
 
     <!-- -------------------Contact---------------- -->
     <div id="contact">
-        <div class="container">
+        <div class="container" id="dark-container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
@@ -188,26 +194,27 @@
                     <a href="Parth_Patil_CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <form action="insert.php" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyright">
+    <div class="copyright" id="dark-container">
         <p>Copyright © ParthPortfolio. Made <i class="fa-solid fa-heart"></i> By Parth</p>
     </div>
+    
 
 </body>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="portfolio.js"></script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxY7fLHJ4nDBeWBG3wKlcquysPB9AcVidRW_QUTC70G9sn_bjM5mlPaAZfv1OvcK5PI/exec'
+    const scriptURL = ''
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
